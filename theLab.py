@@ -12,13 +12,13 @@ with open('free_use_dictionary.txt', 'r') as f:
     dict = f.readlines()
 for i, item in enumerate(dict):
     dict[i] = item.split('\n')[0]
-
+dict = set(dict)
 ham = []
 with open('hamlet.txt', 'r') as f:
     for line in f:
         for word in line.split():
            ham.append((word.translate(str.maketrans('', '', string.punctuation))).lower())
-ham = list(set(ham))
+ham = set(ham)
 
 def monkey(name):
     totString = ""
