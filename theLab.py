@@ -59,14 +59,5 @@ if __name__ == '__main__':
     inputs = ['quincy','adam','james','spoon','shrimp bucket','horse','fig newton','agro','stabby','chokey']
     pool = multiprocessing.Pool(processes=10)
     pool.map(monkey, inputs)
-    #peter = Process(target=monkey)
-    #peter.start()
-    #peter.join()
-    #quincy = Process(target=monkey)
-    #quincy.start()
-    #quincy.join()
-    #james = Process(target=monkey)
-    #james.start()
-    #james.join()
 
     
